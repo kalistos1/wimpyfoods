@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--primary nav bar starts-->
+        <section style="margin-bottom: 100px;">
+            <div class="row ">
+                <nav class="navbar navbar-expand-md navbar-light bg-light shadow fixed-top justify-content-center">
+                    <!--off canvas sidebar toggle-->
+                    <div class="col-2 d-md-none d-md-block">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sidebar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <!--off canvas sidebar toggle-->
+
+                    <div class="col-10 ">
+                        <section class="row ">
+                            <div class="col-8 col-sm-9 col-md-2 ">
+                                <a class="navbar-brand p-0 m-0" href="#">
+                                    <img src="img/WIMPY-LOGO.png" class="img-fluid mx-auto d-block" width="100"
+                                        height="60">
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-8  col-lg-6 px-0  d-none d-md-block d-lg-block ">
+                                <div class="container-fluid">
+                                    <div class="collapse navbar-collapse pt-3 " id="">
+                                        <ul class="navbar-nav fs-6 text-secondary fw-bold">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Shop</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">AboutUs</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">ContactUs</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <!-- search form -->
+                                                <form>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <span class="input-group-text"
+                                                            style="background-color:orange;"><i
+                                                                class="bi bi-search"></i></span>
+                                                    </div>
+                                                </form>
+                                                <!-- search form ends -->
+                                            </li>
+                                            <li class="nav-item d-sm-none d-md-none d-lg-block "
+                                                style="margin-top:-10px;">
+                                                <!-- Account link -->
+                                                <a class="nav-link" href="#"><span class="bg-secondary "><i
+                                                            class="bi bi-person-square fs-2"></i></span></a>
+                                                <!-- Account link -->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 col-sm-3 col-md-2 col-lg-3 pt-3 border-left">
+                                <ul class="navbar-nav fs-6">
+                                    <li class="nav-item px-0 mx-0">
+                                        <a class="nav-link active px-0 mx-0 text-muted d-inline" aria-current="page"
+                                            href="#">
+                                            <span class="d-none d-sm-none d-md-none d-lg-inline ">wishlist</span>
+                                            <i class="bi bi-suit-heart-fill text-muted fs-5 px-1"></i>
+                                        </a>
+
+                                        <button class="btn btn-outline-secondary rounded-pill d-inline">
+                                            <span class="d-none d-sm-none d-md-none d-lg-inline">CART</span>
+                                            <span class="d-none d-sm-none d-md-none d-lg-inline">$0.00 </span>
+                                            <span>
+                                                <i class="bi bi-basket"></i>
+                                            </span>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </nav>
+            </div>
+
+        </section>
+        <!-- primary nav bar ends-->
+
+        <!-- of canvas side nav for small screen begins -->
+        <section>
+            <div class="offcanvas offcanvas-start" id="sidebar">
+                <div class="offcanvas-header ">
+                    <h1 class="offcanvas-title"></h1>
+                    <button type="button" class="btn-close " data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul class="nav flex-column canvas_list">
+                        <li class="nav-item py-2">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-text" style="background-color:orange;"><i
+                                            class="bi bi-search"></i></span>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="nav-item border-bottom border-top py-1">
+                            <a class="nav-link text-secondary" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item  border-bottom py-1">
+                            <a class="nav-link text-secondary" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item  border-bottom py-1">
+                            <a class="nav-link text-secondary" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item  border-bottom py-1">
+                            <a class="nav-link text-secondary" href="#">CONTACT US</a>
+                        </li>
+                        <li class="nav-item  border-bottom py-1">
+                            <a class="nav-link text-secondary" href="#">LOGIN</a>
+                        </li>
+                        <li class="nav-item  border-bottom py-1">
+                            <a class="nav-link text-secondary" href="#">
+                                <span>
+                                    <a class="nav-link text-secondary d-inline px-2" href="#">
+                                        <i class="bi bi-envelope"></i>
+                                    </a>
+                                </span>NEWSLETTER</a>
+                        </li>
+                        <li class="nav-item  border-bottom py-1 px-2">
+                            <span>
+                                <a class="nav-link text-secondary d-inline px-0" href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a class="nav-link text-secondary d-inline px-0" href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a class="nav-link text-secondary d-inline px-0" href="#">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a class="nav-link text-secondary d-inline px-0" href="#">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <!-- of canvas nav for small screen ends -->
+        <section class="abt_hero">
+            <div class="hero-bg">
+            </div>
+        </section>
+    </header>
+    <!-- headeer ends -->
+    <!--main section starts here -->
+    <main class="abt-main">
+        <section class="row justify-content-center">
+            <div class="col-10 col-sm-10 col-md-5 ">
+
+                <h1 class="fw-bold">Creating a well Nourished Environment</h1>
+
+                <p>
+                    wimpy african foods is aimed at providing quality
+                    african food lin other to ensure a well nourish environment.
+                </p>
+            </div>
+            <div class="col-10 col-sm-10 col-md-5">
+                <div class="bg-secondary" style="margin-top:-35%;">
+                    <p>
+                    <h3>Our Features</h3>
+                    <ul>
+                        <li> Quick response.</li>
+                        <li> Neat and well preserved production environment.</li>
+                        <li>Skilled and learned employees</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-6  px-0">
+              <img src="img/michael.jpg" class="img-fluid mx-auto d-block">
+            </div>
+
+            <div class="col-6  px-0" style="background-color: brown;">
+               <section class="row justify-content-center">
+                   <div class="col-8">
+                       <p>
+                           <h3> Carefree Shopping </h3>
+                           <hr>
+                           <ul>
+                               <li>
+                                   Free Shopping
+                                </li>
+                                <li>
+                                    Next day delivery
+                                </li>
+                                <li>
+                                    Free returns
+                                </li>
+                           </ul>
+                       </p>
+                       <button>
+                           <a href="#">Shop Now</a>
+                       </button>
+                   </div>
+               </section>
+            </div>
+       </section>
+    </main>
+    <!-- main ends-->
+    <footer>
+        <section class="row justify-content-center footer">
+            <div class="col-2 ">
+                <h3 class="text-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/WIMPY-LOGO.png" class="img-fluid" width="100" height="60">
+                    </a>
+                </h3>
+                <div>
+                    <p class="text-light mt-5 pt-5 text-responsive3">
+                        1500 Broadway #500 <br>
+                        New York, NY 10018 <br>
+                        United States
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="row text-light">
+                    <section class="col-4">
+                        <h4 class="text-light text-responsive2">My account</h4>
+                        <div>
+                            <ul class="m-0 p-0 fs-6">
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>My
+                                    orders</li>
+                                <li class="border-bottom py-2 text-responsive3"> <i
+                                        class="bi bi-chevron-right text-success"></i>My
+                                    returns</li>
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>My
+                                    information</li>
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>My email
+                                    preferance</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="col-4">
+                        <h4 class="text-light text-responsive text-responsive2">Customer service</h4>
+                        <div>
+                            <ul class="m-0 p-0 fs-6 ">
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>Payments
+                                </li>
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>Shipping
+                                    & delivery</li>
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>Returns
+                                </li>
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>Support
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="col-4">
+                        <h4 class="text-light text-responsive text-responsive2">Contact</h4>
+                        <div>
+                            <ul class="m-0 p-0 fs-6">
+                                <li class="border-bottom py-2 text-responsive3 "><i
+                                        class="bi bi-chevron-right text-success"></i>About
+                                    us</li>
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>Wish
+                                    list</li>
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>Shop
+                                </li>
+                                <li class="border-bottom py-2 text-responsive3"><i
+                                        class="bi bi-chevron-right text-success"></i>Contact
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark py-4">
+            <div class="row justify-content-center">
+                <section class="col-2">
+                    <p class="text-muted ">
+                        Copyright 2022 © eddyweb
+                    </p>
+                </section>
+                <section class="col-7">
+                    <p class="text-muted text-right">
+
+                    </p>
+                </section>
+            </div>
+        </section>
+    </footer>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
