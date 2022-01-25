@@ -1,12 +1,26 @@
-body {
+body,html {
     overflow-x: hidden;
     font-family: "Lato", sans-serif;
     font-weight: 400;
+    height: 100%;
+}
+
+
+.slider_overlay{
+    background: black;
+    overflow:hidden;
+}
+
+.slider_overlay img{
+    object-fit: cover;
+    opacity: 0.6;
+
 }
 
 .product-card {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
 
 .product {
     background: url("../img/baked-front.png") no-repeat;
@@ -88,19 +102,22 @@ footer,.n-btn{
       color:#ffffff;
   }
 
-  /** About us page **/
-  .abt_hero{
-      height:550px;
-      background-image: url("../img/valentine.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position:center bottom;
-      background-clip:initial;
+.abt_hero{ 
+   background-image: url("../img/valentine.png");
+    background-position: center;
+    height:500px;
+    background-position: bottom top;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
+
+
+  /** About us page **/
   .abt-main{
       margin-top:-100px;
       background-color:white;
   }
+
  .contact_hero{
     height: 450px;
      background-image: url("../img/contact.jpg");
@@ -123,3 +140,53 @@ footer,.n-btn{
     transform: translate(-50%, -50%);
     color: white;
 }
+
+
+/* Make the container relative */
+.swap-on-hover {
+    position: relative;	
+      margin:  0 auto;
+      max-width: 400px;
+  }
+  
+  /* Select the image and make it absolute to the container */
+.swap-on-hover img {
+    position: absolute;
+    top:0;
+    left:0;
+      overflow: hidden;
+      /* Sets the width and height for the images*/
+      width: 180px;
+      height: 180px;
+  }
+  
+  /* 
+      We set z-index to be higher than the back image, so it's alwyas on the front.
+  
+  We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
+  */
+  .swap-on-hover .swap-on-hover__front-image {
+    z-index: 9999;
+    transition: opacity .5s linear;
+    cursor: pointer;
+  }
+  
+  /* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+  .swap-on-hover:hover > .swap-on-hover__front-image{
+    opacity: 0;
+  }
+  
+  
+  
+  @media screen  and (max-width: 600px){
+      
+    .abt_hero{ 
+        background-image: url("../img/valentine.png");
+         background-position: center;
+         height:300px;
+         background-position: bottom top;
+         background-size: 100%;
+         background-repeat: no-repeat;
+       }
+     
+  }
