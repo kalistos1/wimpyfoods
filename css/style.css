@@ -23,12 +23,17 @@ body,html {
 
 
 .product {
-    background: url("../img/baked-front.png") no-repeat;
+
     display: inline-block;
     background-size: cover;
     background-position: center;
     height: 205px;
     transition: all 0.6s ease-out;
+}
+
+.product .sales{
+    position:absolute; margin-left:-30px;
+    background-color: hsl(24, 100%, 50%)
 }
 
 
