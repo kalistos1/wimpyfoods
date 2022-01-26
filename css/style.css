@@ -49,21 +49,21 @@ body,html {
 
 
 .product2 {
-    background: url("../img/baked-front.png") no-repeat;
+
     display: inline-block;
     background-size: cover;
     background-position: center;
-    height: 185px;
+    height: 190px;
+    -moz-transition: all o.6s ease-out;
     transition: all 0.6s ease-out;
 }
 
 
 .product2:hover {
-    background: url("../img/cashew back1.jpg") no-repeat;
     display: inline-block;
     background-size: cover;
     background-position: center;
-    height: 180px;
+    height: 190px;
     -moz-transition: all o.6s ease-out;
     transition: all 0.6s ease-out;
 }
