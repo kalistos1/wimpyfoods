@@ -134,7 +134,7 @@ footer,.n-btn{
 
 .hero-text{
     text-align: center;
-    position: absolute;
+    position:absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -142,6 +142,20 @@ footer,.n-btn{
 }
 
 
+.shop_hero{
+    height: 250px;
+     background-image: url("../img/contact.jpg");
+     background-position:48% 40% ;
+}
+
+.shop-text{
+    text-align: center;
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 /* Make the container relative */
 .swap-on-hover {
     position: relative;	

@@ -175,9 +175,13 @@
 
         </section>
         <!-- of canvas nav for small screen ends -->
-        <section class="contact_hero">
-            <div>
-
+        <section class="shop_hero">
+            <div class=" pt-5">
+                <div class="shop-text ">
+                    <p class="mt-5 pt-5">LET IT BEGIN</p>
+                    <h2>CHRISTMAS SALES</h2>
+                    <p> EXTRA 20% OFF SALE</p>
+                </div>
             </div>
         </section>
     </header>
@@ -185,12 +189,12 @@
     <main>
         <div class="row justify-content-center">
             <div class="col-10">
-                <section class="row">
+                <section class="row mt-5">
 
-                    <div class="col-3">
+                    <div class=" col-md-3 col-lg-3 d-none d-sm-none d-md-block d-lg-block">
                         <!-- breadcrumb nav-->
-                        <section>
-                            <nav class="nav">
+                        <section class="mt-3 mb-3">
+                            <nav class="nav fs-5">
                                 <a class="nav-link text-muted px-0" href="#">HOME / </a>
                                 <a class="nav-link text-muted px-0" href="#">SHOP</a>
                             </nav>
@@ -199,30 +203,42 @@
 
                         <!--filter section-->
                         <section>
-                            <h3 class="text-muted fw-bold">FILTER BY PRICE</h3>
-                            <div class="row justify-content-end">
-                                <div class="col-4">
-                                    <button class="btn rounded-pill filter"></button>
+                            <h6 class="text-muted fw-bold mb-4">FILTER BY PRICE</h6>
+                            <input type="range" class="form-range " min="0" max="5" step="0.5" id="customRange3">
+                            <div class="row justify-content-between">
+                                <div class="col-3 text-start">
+                                    <span class="badge bg-secondary py-2 px-4 rounded-pill">filter</span>
                                 </div>
                                 <div class="col-6">
-                                   <p>Price : $10 - $20</p>
+                                    <p>Price : $10 - $20</p>
                                 </div>
                             </div>
                         </section>
                         <!-- filter section ends-->
 
                         <!-- top selling section-->
-                        <section>
+                        <section class="row mt-4">
+                            <diV class="col-5">
+                                <img src="img/baked-font.png" class="img-fluid mx-auto d-block">
+                            </diV>
+                            <diV class="col-7">
+                                <p dlass="p-0 m-0"> baked cashew Nut</p>
+                                <P class="p-0 m-0">
+                                    <span class=" text-muted"><s>$15.00</s></span>
+                                    <span>$15.00</span>
+                                </P>
+                            </diV>
                         </section>
                         <!-- top selling section ends-->
                     </div>
 
-                    <div class="col-9 justify-content-between">
+                    <div class="col-11 col-sm-11 col-md-9 col-lg-9 justify-content-between">
 
                         <!--filter section-->
-                        <section class="">
-                            <div class="dropdown text-right">
+                        <section class="row justify-content-center justify-content-md-end justify-content-lg-end">
+                            <div class="col-7 col-sm-7 col-md-5 dropdown ">
                                 <p class="d-inline">Show all 9 results</p>
+
                                 <button class="btn btn-light dropdown-toggle border-3" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     Sort by latest
@@ -237,10 +253,12 @@
                         <!-- filter ends-->
 
                         <!--display prosuct section-->
-                        <section class="row ">
+                        <section class="row  mt-5">
                             <div class="col-6 col-sm-6 col-md-4">
                                 <div class="card border-0">
                                     <div class="card-header product2">
+                                        <span class=" align-middle rounded-pill text-light py-2 px-2"
+                                            style=" position:absolute; margin-left:-30px; background-color: hsl(24, 100%, 50%);">sale</span>
                                     </div>
                                     <div class="card-body row justify-content-center">
                                         <p class="text-center my-0  text-muted text-responsive3">Cashew</p>
@@ -259,31 +277,10 @@
                             <div class="col-6 col-sm-6 col-md-4">
                                 <div class="card border-0">
                                     <div class="card-header product2">
+                                        <span class=" align-middle rounded-pill text-light py-2 px-2"
+                                            style=" position:absolute; margin-left:-30px; background-color: hsl(24, 100%, 50%);">sale</span>
                                     </div>
                                     <div class="card-body row justify-content-center">
-                                        <p class="text-center my-0  text-muted text-responsive3">Cashew</p>
-                                        <p class="text-center my-0 text-responsive3">Baked Cashew nut</p>
-                                        <p class=" text-center">
-                                            <span class="text-muted mx-1 text-responsive3">$15.00</span>
-                                            <span class="text-dark text-responsive3">$12.00</span>
-                                        </p>
-                                        <p class="text-dark  text-center py-0">
-                                            <span class="border border-3 py-2 px-1 text-responsive3">ADD TO CART</span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-6 col-sm-6 col-md-4">
-                                <div class="card border-0">
-                                    <div class="card-header">
-                                        <figure class="swap-on-hover">
-                                            <img class="swap-on-hover__front-image" src="img/baked-front.png" />
-                                            <img class="swap-on-hover__back-image" src="img/cashew back1.jpg" />
-                                        </figure>
-                                    </div>
-                                    <div class="card-body row bg-dark justify-content-center top-0 start-0"
-                                        style="margin-top:100%;">
                                         <p class="text-center my-0  text-muted text-responsive3">Cashew</p>
                                         <p class="text-center my-0 text-responsive3">Baked Cashew nut</p>
                                         <p class=" text-center">
@@ -300,8 +297,6 @@
                         <!-- display product ends-->
                     </div>
                 </section>
-
-
             </div>
         </div>
     </main>
